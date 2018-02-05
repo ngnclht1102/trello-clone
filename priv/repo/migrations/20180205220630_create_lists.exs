@@ -10,5 +10,6 @@ defmodule TrelloRewriteMe.Repo.Migrations.CreateLists do
       timestamps
     end
 
+    create unique_index(:lists, [:board_id])
   end
 end
